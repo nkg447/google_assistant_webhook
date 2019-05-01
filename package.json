@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "npm pc.js",
+    "test": "node pc.js",
     "start": "node fullfilment.js"
   },
   "repository": {
