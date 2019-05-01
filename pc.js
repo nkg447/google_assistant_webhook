@@ -40,8 +40,8 @@ function showFiles(path, callback) {
         execute(`xdg-open "${path}"`);
         callback({
             isList: false,
-            speech: `opening ${path} `,
-            text: `opening ${path} `
+            speech: `opening ${pathToName(path)} `,
+            text: `opening ${pathToName(path)} `
         })
     }
     fs.readdir(path, (err, files) => {
@@ -60,8 +60,8 @@ function showFiles(path, callback) {
         callback({
             isList: true,
             list: list,
-            speech: `showing files in ${path} folder`,
-            text: `showing files in ${path} folder`
+            speech: `showing files in ${pathToName(path)} folder`,
+            text: `showing files in ${pathToName(path)} folder`
         });
 
     })
@@ -74,4 +74,8 @@ function execute(data) {
             return;
         }
     });
+}
+
+function pathToName(str) {
+    return str.split('\\').pop().split('/').pop();
 }

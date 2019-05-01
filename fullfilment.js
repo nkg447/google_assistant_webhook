@@ -54,7 +54,7 @@ function setFilesList(conv, data) {
             };
         }
         conv.ask(new List({
-            title: `showing files`,
+            title: `Select a file or folder`,
             items: items
         }))
     }
