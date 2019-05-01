@@ -1,0 +1,147 @@
+{
+  "id": "8a3f283a-74e2-42b8-8c76-b2baa9ba2232",
+  "name": "execute_cmd",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "e3aaaf23-2d10-4db4-860b-5b0558bdf95e",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "cmd",
+          "value": "$cmd",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "34835842-fb40-4124-9798-205c76bd5ee7",
+      "data": [
+        {
+          "text": "open "
+        },
+        {
+          "text": "editor",
+          "alias": "cmd",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "f9202374-6471-41b2-8980-c47ffd70c591",
+      "data": [
+        {
+          "text": "open "
+        },
+        {
+          "text": "google chrome",
+          "alias": "cmd",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "5a89c9ed-ea28-4e6e-9b13-9131e66d24a7",
+      "data": [
+        {
+          "text": "open "
+        },
+        {
+          "text": "VLC",
+          "alias": "cmd",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "a2035d16-4217-4a75-96a6-f89a642863dd",
+      "data": [
+        {
+          "text": "execute command "
+        },
+        {
+          "text": "VLC",
+          "alias": "cmd",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "885f8924-6eef-4324-854d-1eb66507630e",
+      "data": [
+        {
+          "text": "execute command "
+        },
+        {
+          "text": "shutdown",
+          "alias": "cmd",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "d767f1fe-b42f-4d01-bac1-ebed506123c9",
+      "data": [
+        {
+          "text": "execute command "
+        },
+        {
+          "text": "editor",
+          "alias": "cmd",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}

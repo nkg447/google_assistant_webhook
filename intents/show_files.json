@@ -1,0 +1,106 @@
+{
+  "id": "958852e1-996c-48c5-a580-5d90a3c3ecbd",
+  "name": "show_files",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "path",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "4959796c-2b35-499e-8ac0-87cc18bf6543",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "path",
+          "value": "$path",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "d8e79886-715a-4624-8446-a9472320e584",
+      "data": [
+        {
+          "text": "open "
+        },
+        {
+          "text": "home",
+          "alias": "path",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " folder"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "0fd19003-c69f-4256-9c75-762cc1db9485",
+      "data": [
+        {
+          "text": "open "
+        },
+        {
+          "text": "friends",
+          "alias": "path",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " folder"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "f295781a-f724-4314-9b6d-f86c5c89ad40",
+      "data": [
+        {
+          "text": "open "
+        },
+        {
+          "text": "multimedia",
+          "alias": "path",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " folder"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}
